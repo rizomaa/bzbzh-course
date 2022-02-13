@@ -1,0 +1,38 @@
+.intro {
+    background-image: url("../img/bzh-bzh-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+        text-align: center;
+        background-color: $transparent-white;
+        max-width: 400px;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    & p {
+        text-align: center;
+        background-color: $transparent-white;
+        max-width: 400px;
+        padding: 20px;
+        margin-bottom: 36px;
+    }
+
+    & a {
+        display: block;
+        width: 200px;
+        height: 40px;
+        text-decoration: none;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-top: 10px;
+        background-color: $button-color;
+    }
+}
