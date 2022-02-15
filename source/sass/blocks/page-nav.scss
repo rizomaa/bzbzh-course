@@ -11,12 +11,12 @@
   
   .page-nav__container--closed {
     & .menu-list__item {
-      @media (max-width: 767px) {
+      @media (max-width: $max-mobile-width) {
         display: none;
       }
     }
     & .add-menu {
-      @media (max-width: 767px) {
+      @media (max-width: $max-mobile-width) {
         display: none;
       }
     }

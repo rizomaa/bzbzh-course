@@ -1,5 +1,8 @@
 .page__body {
     min-width: $min-mobile-width;
+    max-width: $max-desktop-width;
+    height: 100%;
     margin: 0 auto;
     background-color: $white;
+
   }
