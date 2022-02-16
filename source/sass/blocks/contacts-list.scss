@@ -1,8 +1,7 @@
-.features {
-    padding: 40px 20px 20px;
-}
-
-.features__list {
+.contacts-list {
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
     list-style-type: none;
     padding-left: 0;
 
@@ -10,8 +9,9 @@
         background-image: url("../img/arrow.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
-        background-size: 20px;
-        padding-left: 30px;
-        line-height: 28px;
+        background-size: 35px;
+        display: block;
+        width: 45px;
+        height: 45px;
     }
 }
