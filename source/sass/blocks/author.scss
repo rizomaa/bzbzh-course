@@ -1,3 +1,44 @@
 .author {
     padding: 40px 20px 20px;
+
+    & h2 {
+        @include heading-2;
+
+        @media (min-width: $desktop-width) {
+            width: 100%;
+        }
+    }
+
+    & p {
+        @include plain-text;
+        @media (min-width: $desktop-width) {
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+
+    & img {
+        width: 100%; 
+
+        @media (min-width: $desktop-width) {
+            width: 45%;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-row: 10/11;
+        grid-column: 1/3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    & a {
+        margin: 0 auto;
+
+        @media (min-width: $desktop-width) {
+            margin: 40px auto;
+        }
+    }
 }

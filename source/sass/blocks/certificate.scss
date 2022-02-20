@@ -1,4 +1,17 @@
 .certificate {
     padding: 40px 20px 20px;
     background-color: rgba(211, 211, 211, 0.3);
+
+    & h2 {
+        @include heading-2;
+    }
+
+    & p {
+        @include plain-text;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-row: 5/6;
+        grid-column: 1/3;
+    }
 }

@@ -1,4 +1,5 @@
 .up-button {
+  display: none;
     position: fixed;
     width: 35px;
     bottom: 60px;
@@ -14,4 +15,8 @@
     text-align: center;
     padding-bottom: 10px;
     box-sizing: border-box;
+  }
+
+  .shown {
+    display: inline-block;
   }
