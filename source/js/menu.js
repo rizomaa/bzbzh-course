@@ -1,9 +1,9 @@
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
-
 	if (window.innerWidth > 768) {
 		document.querySelectorAll('.section').forEach((el, i) => {
 			if (el.offsetTop - document.querySelector('.page-nav').clientHeight <= scrollDistance) {
+				console.log(scrollDistance);
 				document.querySelectorAll('.page-nav a').forEach((el) => {
 					if (el.classList.contains('active')) {
 						el.classList.remove('active');
@@ -11,6 +11,13 @@ window.addEventListener('scroll', () => {
 				});
 
 				document.querySelectorAll('.page-nav li')[i].querySelector('a').classList.add('active');
+			}
+		});
+	}
+	if (scrollDistance < 500) {
+		document.querySelectorAll('.page-nav a').forEach((el) => {
+			if (el.classList.contains('active')) {
+				el.classList.remove('active');
 			}
 		});
 	}

@@ -1,6 +1,5 @@
 .enrol-button {
     display: block;
-    //margin: 0 auto;
     width: 280px;
     max-width: 400px;
     background-color: $button-color;
@@ -9,9 +8,8 @@
     text-align: center;
     padding: 20px 10px;
     box-sizing: border-box;
+    border-radius: 5px;
     @include buttons;
 
-    @media (min-width: $desktop-width) {
-        //margin: 40px auto;
-    }
+    
 }

@@ -1,6 +1,6 @@
 .results {
     padding: 40px 20px 20px;
-    background-color: rgba(211, 211, 211, 0.3);
+    background-color: $grey;
 
     & ol {
         padding-left: 15px;
@@ -28,9 +28,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+        padding: 120px 40px 20px;
     }
 
     & img {
+        width: 100%;
         @media (min-width: $desktop-width) {
             width: 40%;
         }

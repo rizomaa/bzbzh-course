@@ -16,6 +16,10 @@
         display: block;
         padding: 10px;
         color: $black;
+
+        @media (min-width: $desktop-width) {
+            border-radius: 5px;
+        }       
     }
 }
 

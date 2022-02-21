@@ -11,4 +11,7 @@ window.onscroll = function () {
 
 upButton.onclick = function () {
   window.scrollTo(0, 0);
+  document.querySelectorAll('.page-nav a').forEach((el) => {    
+      el.classList.remove('active');   
+  });
 };

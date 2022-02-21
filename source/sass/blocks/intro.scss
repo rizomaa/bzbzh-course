@@ -13,20 +13,23 @@
     & h1 {
         text-align: center;
         background-color: $transparent-white;
-        max-width: 400px;
-
+        max-width: 410px;
+        box-sizing: border-box;
         padding: 20px;
         margin-bottom: 40px;
         @include heading-1;
+        border-radius: 5px;
     }
 
     & p {
         text-align: center;
         background-color: $transparent-white;
-        max-width: 400px;
+        max-width: 410px;
+        box-sizing: border-box;
         padding: 20px;
         margin-bottom: 36px;
         @include plain-text;
+        border-radius: 5px;
     }
 
     & a {
@@ -51,8 +54,7 @@
         grid-column: 1/3;
         z-index: -1;
         align-items: flex-start;
-        padding-left: 20px;
-        padding-top: 120px;
+        padding: 120px 40px 0;
         background-position: 0 50%;
         background-size: 100%;
     }

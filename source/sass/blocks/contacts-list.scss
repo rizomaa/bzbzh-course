@@ -13,5 +13,51 @@
         display: block;
         width: 45px;
         height: 45px;
+        position: relative;
+    }
+}
+.contacts-list__link {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 9px;
+    left: 6px;
+}
+.contacts-list__link--fb {
+    & svg {
+        width: 22px;
+        height: 22px;
+        fill: $white;
+    }
+}
+
+.contacts-list__link--gh {
+    & svg {
+        width: 22px;
+        height: 22px;
+        fill: $white;
+    }
+}
+
+.contacts-list__link--yt {
+    & svg {
+        width: 24px;
+        height: 24px;
+        fill: $white;
+    }
+}
+
+.contacts-list__link--ig {
+    & svg {
+        width: 22px;
+        height: 22px;
+        fill: $white;
+    }
+}
+.contacts-list__link--bmc {
+    & svg {
+        width: 22px;
+        height: 22px;
+        fill: $white;
     }
 }
