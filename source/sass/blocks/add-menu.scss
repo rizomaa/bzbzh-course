@@ -22,6 +22,15 @@
     background-color: $button-color;
     margin-right: 10px;
     color: $white;
+    transition-duration: 0.5s;
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:active {
+        background-color: $active;
+    }
 
     @media (min-width: $desktop-width) {
         border-radius: 5px;

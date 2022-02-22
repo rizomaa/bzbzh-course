@@ -6,7 +6,7 @@
     padding-left: 0;
 
     & li {
-        background-image: url("../img/arrow.svg");
+        background-image: url("../img/comb.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: 35px;
@@ -14,6 +14,10 @@
         width: 45px;
         height: 45px;
         position: relative;
+
+        &:hover {
+            background-image: url("../img/comb-active.svg");
+        }
     }
 }
 .contacts-list__link {

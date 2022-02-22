@@ -3,6 +3,7 @@
     width: 280px;
     max-width: 400px;
     background-color: $button-color;
+    transition-duration: 0.5s;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -11,5 +12,10 @@
     border-radius: 5px;
     @include buttons;
 
-    
+    &:hover {
+        background-color: $hover;
+    }
+    &:active {
+        background-color: $active;
+    }
 }

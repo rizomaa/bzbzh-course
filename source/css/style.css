@@ -217,6 +217,7 @@
   width: 280px;
   max-width: 400px;
   background-color: #F19202;
+  transition-duration: 0.5s;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -229,6 +230,10 @@
   line-height: 22px;
   color: #FFFFFF;
   text-transform: uppercase; }
+  .enrol-button:hover {
+    background-color: #595656; }
+  .enrol-button:active {
+    background-color: #212529; }
 
 .features {
   padding: 40px 20px 20px; }
@@ -339,6 +344,7 @@
     box-sizing: border-box;
     padding-top: 10px;
     background-color: #F19202;
+    transition-duration: 0.5s;
     margin: 10px auto;
     font-family: "Roboto Medium", "Arial", sans-serif;
     font-weight: 500;
@@ -349,11 +355,14 @@
     @media (min-width: 768px) {
       .intro a {
         margin: 10px 0; } }
+    .intro a:hover {
+      background-color: #595656; }
+    .intro a:active {
+      background-color: #212529; }
   @media (min-width: 768px) {
     .intro {
       grid-row: 1/2;
       grid-column: 1/3;
-      z-index: -1;
       align-items: flex-start;
       padding: 120px 40px 0;
       background-position: 0 50%;
@@ -745,7 +754,7 @@
   height: 40px;
   right: 20px;
   background-color: transparent;
-  background-image: url("../img/arrow.svg");
+  background-image: url("../img/comb.svg");
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -780,7 +789,12 @@
   padding: 5px 5px;
   background-color: #F19202;
   margin-right: 10px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  transition-duration: 0.5s; }
+  .add-menu .donate:hover {
+    background-color: #595656; }
+  .add-menu .donate:active {
+    background-color: #212529; }
   @media (min-width: 768px) {
     .add-menu .donate {
       border-radius: 5px; } }
@@ -805,7 +819,7 @@
   list-style-type: none;
   padding-left: 0; }
   .contacts-list li {
-    background-image: url("../img/arrow.svg");
+    background-image: url("../img/comb.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 35px;
@@ -813,6 +827,8 @@
     width: 45px;
     height: 45px;
     position: relative; }
+    .contacts-list li:hover {
+      background-image: url("../img/comb-active.svg"); }
 
 .contacts-list__link {
   position: absolute;
