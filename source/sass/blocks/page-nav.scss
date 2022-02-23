@@ -1,9 +1,13 @@
+.page-nav {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
 .page-nav__container {
   background-color: $white;
   @media (min-width: $desktop-width) {
     display: grid;
     align-items: end;
-    width: 620px;
   }
   
 }

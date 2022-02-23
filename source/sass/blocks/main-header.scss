@@ -1,12 +1,19 @@
 .main-header {
+    background-color: $white;
+    min-width: $min-mobile-width;
+    max-width: $max-desktop-width;
+    height: 55px;
+    @media (min-width: $desktop-width) {
+        height: 120px;
+    }
+}
+.main-header__container {
     position: fixed;
     top: 0;
-    background-color: $white;
+    z-index: 3;
     min-width: $min-mobile-width;
     width: 100%;
     max-width: $max-desktop-width;
-}
-.main-header__container {
     background-color: $white;
     height: 55px;
     @media (min-width: $desktop-width) {

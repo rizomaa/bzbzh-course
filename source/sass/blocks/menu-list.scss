@@ -18,7 +18,7 @@
         color: $black;
         
         @media (min-width: $desktop-width) {
-            border-radius: 5px;
+            padding: 10px 4px;
         }       
     }
 }
@@ -45,9 +45,10 @@
 .menu-list__item a:hover {
     background-color: $button-color;
     color: $white;
+    border-radius: 5px;
 }
 .menu-list__item a.active {
     color: $white;
     background-color: $button-color;
-    
+    border-radius: 5px;
 }
