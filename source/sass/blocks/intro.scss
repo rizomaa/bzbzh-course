@@ -19,6 +19,7 @@
         margin-bottom: 40px;
         @include heading-1;
         border-radius: 5px;
+        text-transform: uppercase;
     }
 
     & p {
@@ -30,6 +31,11 @@
         margin-bottom: 36px;
         @include plain-text;
         border-radius: 5px;
+        font-size: 18px;
+
+        @media (min-width: $desktop-width) {
+            text-align: left;
+        }        
     }
 
     & a {
