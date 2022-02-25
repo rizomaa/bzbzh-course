@@ -7,7 +7,9 @@
   background-color: $white;
   @media (min-width: $desktop-width) {
     display: grid;
-    align-items: end;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    height: 100px;
   }
   
 }

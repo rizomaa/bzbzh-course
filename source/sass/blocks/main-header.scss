@@ -17,12 +17,12 @@
     background-color: $white;
     height: 55px;
     @media (min-width: $desktop-width) {
-        height: 120px;
+        height: 140px;
         box-sizing: border-box;
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
-        padding: 10px 20px 10px 10px;
+        align-items: flex-start;
+        padding: 10px 20px;
     }
 }
 .main-header__container img {
@@ -33,5 +33,7 @@
     @media (min-width: $desktop-width) {
         width: 100px;
         height: 100px;
+        margin: 0;
+        margin-right: 30px;
     }
 }
