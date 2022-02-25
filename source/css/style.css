@@ -61,10 +61,12 @@
         width: 50%;
         margin-top: 0; } }
   .author img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     @media (min-width: 768px) {
       .author img {
-        width: 45%; } }
+        width: 40%;
+        height: auto; } }
   @media (min-width: 768px) {
     .author {
       grid-row: 10/11;
@@ -135,10 +137,12 @@
       .content ol {
         margin: 0; } }
   .content img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     @media (min-width: 768px) {
       .content img {
         width: 40%;
+        height: auto;
         float: right;
         margin-left: 20px; } }
   @media (min-width: 768px) {
@@ -202,12 +206,22 @@
         display: block;
         width: 50%;
         margin-top: 0; } }
-  .description img {
+  .description img:nth-of-type(1) {
     width: 100%;
+    height: 100%;
     margin-bottom: 40px; }
     @media (min-width: 768px) {
-      .description img {
-        width: 40%; } }
+      .description img:nth-of-type(1) {
+        width: 40%;
+        height: auto; } }
+  .description img:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .description img:nth-of-type(2) {
+        width: 40%;
+        height: auto; } }
   @media (min-width: 768px) {
     .description {
       grid-row: 2/3;
@@ -783,10 +797,12 @@
       margin-top: -100px;
       background-clip: padding-box; } }
   .results img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
     @media (min-width: 768px) {
       .results img {
-        width: 40%; } }
+        width: 40%;
+        height: auto; } }
 
 .timetable {
   padding: 40px 20px 20px;
@@ -830,7 +846,7 @@
   width: 45px;
   height: 50px;
   bottom: 25px;
-  right: 45px;
+  right: 30px;
   background-color: transparent;
   background-image: url("../img/arrow.svg");
   background-size: contain;
