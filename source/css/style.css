@@ -330,7 +330,7 @@
   .intro h1 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 410px;
+    max-width: 410px;
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 40px;
@@ -340,11 +340,13 @@
     line-height: 26px;
     color: #000000;
     border-radius: 5px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    width: 100%;
+    min-width: 320px; }
   .intro p {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 410px;
+    max-width: 410px;
     box-sizing: border-box;
     padding: 20px;
     margin-bottom: 36px;
@@ -354,7 +356,9 @@
     line-height: 20px;
     color: #000000;
     border-radius: 5px;
-    font-size: 18px; }
+    font-size: 18px;
+    width: 100%;
+    min-width: 320px; }
     @media (min-width: 768px) {
       .intro p {
         text-align: left; } }
