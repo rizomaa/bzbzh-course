@@ -20,6 +20,7 @@
     & ol {
         @include plain-text;
         line-height: 28px;
+        padding-left: 15px;
 
         @media (min-width: $desktop-width) {
             margin: 0;

@@ -12,7 +12,6 @@
   border: none;
   color: $white;
   font-size: 30px;
-  text-align: center;
   padding-bottom: 10px;
   box-sizing: border-box;
   cursor: pointer;
@@ -21,6 +20,19 @@
     width: 55px;
     height: 65px;
     font-size: 38px;
+  }
+
+  &::before {
+    content: "↑";
+    position: absolute;
+    top: 2px;
+    left: 14px;
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+      left: 19px;
+    }
+
   }
 }
 

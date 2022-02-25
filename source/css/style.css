@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Roboto Bold";
   font-weight: 700;
@@ -129,7 +130,8 @@
     font-size: 16px;
     line-height: 20px;
     color: #000000;
-    line-height: 28px; }
+    line-height: 28px;
+    padding-left: 15px; }
     @media (min-width: 768px) {
       .content ol {
         margin: 0; } }
@@ -833,7 +835,6 @@
   border: none;
   color: #FFFFFF;
   font-size: 30px;
-  text-align: center;
   padding-bottom: 10px;
   box-sizing: border-box;
   cursor: pointer; }
@@ -842,6 +843,15 @@
       width: 55px;
       height: 65px;
       font-size: 38px; } }
+  .up-button::before {
+    content: "↑";
+    position: absolute;
+    top: 2px;
+    left: 14px; }
+    @media (min-width: 768px) {
+      .up-button::before {
+        top: 4px;
+        left: 19px; } }
 
 .shown {
   display: inline-block; }
