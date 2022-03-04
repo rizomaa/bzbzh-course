@@ -18,7 +18,7 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
-if( empty($errors))
+if (empty($errors))
 
 {
 
@@ -28,7 +28,7 @@ $email_subject = "Contact form submission";
 
 $email_body = "You have received a new message. ".
 
-" Here are the details:
+"Here are the details:
 
 "Email: $email_address\n Message \n $message";
 
@@ -40,6 +40,6 @@ mail($to,$email_subject,$email_body,$headers);
 
 //redirect to the 'thank you' page
 
-header('Location: contact-form-thank-you.html');
+header('Location: index.html');
 
 }
