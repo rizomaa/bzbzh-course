@@ -18,11 +18,13 @@
 .add-menu .donate {
     display: block;
     width: 70px;
-    padding: 5px 5px;
+    padding: 5px;
     background-color: $button-color;
     margin-right: 10px;
     color: $white;
     transition-duration: 0.5s;
+    @include plain-text;
+    border-radius: 5px;
 
     &:hover {
         background-color: $hover;
@@ -30,21 +32,23 @@
 
     &:active {
         background-color: $active;
-    }
-
-    @media (min-width: $desktop-width) {
-        border-radius: 5px;
-    }    
+    }   
 }
 
 .add-menu .lang-toggle {
     display: block;
     width: 70px;
-    
 }
 
 .add-menu a {
     text-align: center;
     text-decoration: none;
     @include plain-text;
+    color: $black;
+}
+
+a.lang-toggle__active {
+    border: 1px solid $form-button;
+    padding: 5px;
+    border-radius: 5px;
 }

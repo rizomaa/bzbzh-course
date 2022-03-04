@@ -1,0 +1,57 @@
+.contact {
+    padding: 40px 20px 20px;
+    margin-bottom: 40px;
+
+    @media (min-width: $desktop-width) {
+        padding: 40px 40px 20px;
+        border-top: 100px solid transparent;
+	    margin-top: -100px;
+        background-clip:padding-box;
+        grid-row: 11/12;
+        grid-column: 1/3;
+    }
+
+    & h2 {
+        @include heading-2;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto 30px;
+    }
+
+    & form {
+        width: 100%;
+        max-width: 520px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey;
+        @include plain-text;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+.contact__form {
+    & input {
+        margin-bottom: 20px;
+        @include plain-text;
+    }
+    & textarea {
+        margin-bottom: 20px;
+        @include plain-text;
+    }
+
+    & input:nth-of-type(2) {
+        width: 280px;
+        margin: 0 auto;
+        background-color: $form-button;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px -5px $active;
+    }
+}
