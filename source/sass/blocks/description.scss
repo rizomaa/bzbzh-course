@@ -44,7 +44,8 @@
         padding: 40px 40px 20px;
         border-top: 100px solid transparent;
 	    margin-top: -100px;
-        background-clip:padding-box;
+        background-clip: padding-box;
+        z-index: -1;
     }
 }
 
