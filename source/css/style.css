@@ -57,7 +57,7 @@
     line-height: 22px; }
     @media (min-width: 768px) {
       .author p {
-        width: 50%;
+        width: 55%;
         margin-top: 0; } }
   .author img {
     width: 100%;
@@ -181,7 +181,7 @@
       background-clip: padding-box; } }
 
 .description {
-  padding: 40px 20px 20px;
+  padding: 40px 20px;
   background-color: rgba(211, 211, 211, 0.3);
   display: grid; }
   .description h2 {
@@ -194,15 +194,25 @@
       .description h2 {
         display: block;
         width: 100%; } }
-  .description p {
+  .description p:nth-of-type(1) {
     font-family: "Roboto Regular", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px; }
     @media (min-width: 768px) {
-      .description p {
+      .description p:nth-of-type(1) {
         display: block;
-        width: 50%;
+        width: 55%;
+        margin-top: 0; } }
+  .description p:nth-of-type(2) {
+    font-family: "Roboto Regular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px; }
+    @media (min-width: 768px) {
+      .description p:nth-of-type(2) {
+        display: block;
+        width: 40%;
         margin-top: 0; } }
   .description img {
     width: 100%;
@@ -214,6 +224,15 @@
     @media (min-width: 768px) {
       .description picture {
         width: 40%; } }
+  .description iframe {
+    width: 100%;
+    height: 315px;
+    margin-bottom: 40px;
+    background-image: url("../img/bzh-bzh-honey-bees.jpg"); }
+    @media (min-width: 768px) {
+      .description iframe {
+        width: 55%;
+        height: 294px; } }
   @media (min-width: 768px) {
     .description {
       grid-row: 2/3;
@@ -223,12 +242,11 @@
       justify-content: space-between;
       align-items: flex-start;
       padding: 40px 40px 20px;
-      border-top: 100px solid transparent;
-      margin-top: -100px;
-      background-clip: padding-box;
-      z-index: -1; } }
+      border-top: 80px solid transparent;
+      margin-top: -80px;
+      background-clip: padding-box; } }
 
-.description picture:nth-of-type(2) {
+.description iframe {
   grid-row: 5/6;
   margin-bottom: 0; }
 
@@ -270,7 +288,8 @@
       grid-column: 1/3;
       padding: 40px 40px 20px;
       border-top: 100px solid transparent;
-      margin-top: -100px; } }
+      margin-top: -100px;
+      z-index: -1; } }
 
 .features__list {
   list-style-type: none;
@@ -337,7 +356,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     max-width: 410px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 8px;
     margin-bottom: 40px;
     font-family: "Roboto Bold", "Arial", sans-serif;
     font-weight: 700;
@@ -419,7 +438,7 @@
   height: 55px; }
   @media (min-width: 768px) {
     .main-header__container {
-      height: 140px;
+      height: 120px;
       box-sizing: border-box;
       display: flex;
       justify-content: space-between;
@@ -522,7 +541,8 @@
     font-family: "Roboto Regular", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 22px;
+    color: #000000; }
 
 @media (min-width: 768px) {
   .page-main__container {
@@ -625,7 +645,8 @@
       padding: 40px 40px 0;
       border-top: 100px solid transparent;
       margin-top: -100px;
-      background-clip: padding-box; } }
+      background-clip: padding-box;
+      z-index: -1; } }
 
 .participants__list {
   list-style-type: none;

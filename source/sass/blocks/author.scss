@@ -12,7 +12,7 @@
     & p {
         @include plain-text;
         @media (min-width: $desktop-width) {
-            width: 50%;
+            width: 55%;
             margin-top: 0;
         }
     }
