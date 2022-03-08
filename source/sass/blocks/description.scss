@@ -45,11 +45,10 @@
         }
     }
 
-    & iframe {
+    & .description__video {
         width: 100%;
         height: 315px;
         margin-bottom: 40px;
-        background-image: url("../img/bzh-bzh-honey-bees.jpg");
         @media (min-width: $desktop-width) {
             width: 55%;
             height: 294px;
@@ -69,7 +68,19 @@
     }
 }
 
-.description iframe {
+.description__video {
     grid-row: 5/6;
     margin-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.description__video iframe {
+    background-image: url("../img/bzh-bzh-honey-bees.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
