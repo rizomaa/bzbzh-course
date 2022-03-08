@@ -44,16 +44,7 @@
             width: 40%;
         }
     }
-
-    & .description__video {
-        width: 100%;
-        height: 315px;
-        margin-bottom: 40px;
-        @media (min-width: $desktop-width) {
-            width: 55%;
-            height: 294px;
-        }
-    }
+    
     @media (min-width: $desktop-width) {
         grid-row: 2/3;
         grid-column: 1/3;
@@ -73,6 +64,14 @@
     margin-bottom: 0;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 315px;
+    margin-bottom: 40px;
+
+    @media (min-width: $desktop-width) {
+        width: 55%;
+        height: 294px;
+    }
 }
 
 .description__video iframe {
