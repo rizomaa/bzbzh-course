@@ -8,10 +8,10 @@ $send = mail($myemail, $header, $mes, "Content-type:text/plain; charset = UTF-8\
 
 if ($send == 'true') {
     echo "<script>alert(\"Паведамленне адпраўлена / Сообщение отправлено\");</script>";
-    //header('Location: index.html');
+    header('Location: index.html');
 } else {
     echo "<script>alert(\"Адбылася памылка, паспрабуйце яшчэ раз / Произошла ошибка, попробуйте еще раз\");</script>";
-    //header('Location: index.html');
+    header('Location: index.html');
 }
 
 ?>
