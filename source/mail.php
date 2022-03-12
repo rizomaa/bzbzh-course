@@ -7,11 +7,11 @@ $mes = "E-mail: $email \nТекст: $message";
 $send = mail($myemail, $header, $mes, "Content-type:text/plain; charset = UTF-8\r\nFrom:$email");
 
 if ($send == 'true') {
-    echo "Паведамленне адпраўлена / Сообщение отправлено";
-    header('Location: index.html');
+    echo "<script>alert(\"Паведамленне адпраўлена / Сообщение отправлено\");</script>";
+    //header('Location: index.html');
 } else {
-    echo "Адбылася памылка, паспрабуйце яшчэ раз / Произошла ошибка, попробуйте еще раз";
-    header('Location: index.html');
+    echo "<script>alert(\"Адбылася памылка, паспрабуйце яшчэ раз / Произошла ошибка, попробуйте еще раз\");</script>";
+    //header('Location: index.html');
 }
 
 ?>

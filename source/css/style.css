@@ -917,7 +917,7 @@
 
 .add-menu .lang-toggle {
   display: block;
-  width: 70px; }
+  width: 75px; }
 
 .add-menu a {
   text-align: center;
@@ -1048,3 +1048,5 @@ a.lang-toggle__active {
   border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 5px -5px #212529; }
+
+/*# sourceMappingURL=style.css.map */
