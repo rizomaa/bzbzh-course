@@ -8,7 +8,7 @@ $mes = "E-mail: $email \nТекст: $message";
 
 if (!preg_match(
     "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-    $email_address)) {
+    $email)) {
     $errors .= "\n Error: Invalid email address";
 }
 if( 
@@ -25,12 +25,12 @@ if (empty($errors)) {
 // Если отправка прошла успешно — так и пишем
 if ($send == 'true') {
     echo "Сообщение отправлено";
-    header('Location: mail.php');
+    header('Location: index.html');
 }
 // Если письмо не ушло — выводим сообщение об ошибке
 else {
     echo "Ой, что-то пошло не так";
-    header('Location: mail.php');
+    header('Location: index.html');
 }
 }
 ?>
