@@ -233,11 +233,11 @@
                     на курс</a>
             </section>
             <section class="contact section" id="contact">
-                <form class="contact__form" method="POST" action="mail.php">
+                <form class="contact__form form" method="POST" action="mail.php">
                     <h2>Связаться</h2>
-                    <input type="email" name="email" value="Обратный e-mail адрес" required>
-                    <textarea name="message" required>Сообщение</textarea>
-                    <input type="submit" name="send" value="ОТПРАВИТЬ">
+                    <input class="form__email" type="email" name="email" value="Обратный e-mail адрес" required>
+                    <textarea class="form__message" name="message" required>Сообщение</textarea>
+                    <input class="form__submit" type="submit" name="send" value="ОТПРАВИТЬ">
                 </form>
             </section>
         </div>
@@ -293,6 +293,7 @@
     <button class="up-button" type="button"><span class="visually-hidden">Наверх</span>
     </button>
     <script src="js/script.min.js"></script>
+    <script src="js/form.js"></script>
     <script data-name="BMC-Widget" data-cfasync="false" 
     src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="talashby" 
     data-description="Support me on Buy me a coffee!" data-message="" data-color="#F19202" 
