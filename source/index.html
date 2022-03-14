@@ -227,13 +227,18 @@
                 на курс</a>
             </section>
             <section class="contact section" id="contact">
+                <!--<h2>Кантакты</h2>
+                <h3>Мы ў Instagram</h3>
+                <div class="contact__igfeed" id="instafeed">
+                </div>-->
                 <form class="contact__form form" method="POST" action="mail.php">
-                    <h2>Звязацца</h2>
+                    <h3>Звязацца</h3>
                     <input class="form__email" type="email" name="email" value="Зваротны імэйл" required>
                     <textarea class="form__message" name="message" required>Тэма паведамлення і апісанне яго</textarea>
                     <input class="form__submit" type="submit" name="send" value="АДПРАВІЦЬ">
                 </form>
             </section>
+            
         </div>
     </main>
     <footer class="page-footer section" id="contact">
@@ -281,17 +286,18 @@
     </footer>
     <button class="up-button" type="button"><span class="visually-hidden">Наверх</span>
     </button>
-    <!-- Сообщение об успешной загрузке изображения -->
-    <template id="success">
-        <section class="success">
-        <div class="success__inner">
-            <h2 class="success__title">Изображение успешно загружено</h2>
-            <button type="button" class="success__button">Круто!</button>
-        </div>
-        </section>
-    </template>
     <script src="js/script.min.js"></script>
     <script src="js/form.js"></script>
+    <!--<script src='https://(bzh-bzh).herokuapp.com/token.js'></script>
+    <script src="js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var feed = new Instafeed({
+          accessToken: 'IGQVJVaGdIUldDQ1ZAmLXpsbEtOV05Cdlg0NWdWQkJTMXdxbFg2X2E3VkNYQkVjUXJZAT2h5RURfZAkdXcC1SdFV4WVdwMXFMMk9NNDRNRno5MzI0MkJ6WkJPT0UzTm9vMHFpaG1nT09jczVRVWQ2SnZATXwZDZD',
+          template: '<a href="{{link}}"><img src="{{image}}" title="{{caption}}" /><p>"{{caption}}"</p></a>',
+          limit: 3,
+        });      
+        feed.run();
+    </script>-->
     <script data-name="BMC-Widget" data-cfasync="false" 
     src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="talashby" 
     data-description="Support me on Buy me a coffee!" data-message="" data-color="#F19202" 

@@ -9,13 +9,19 @@
         background-clip:padding-box;
         grid-row: 11/12;
         grid-column: 1/3;
+        box-sizing: border-box;
+        max-width: 1024px;
     }
 
     & h2 {
         @include heading-2;
         width: 100%;
-        max-width: 520px;
+        //max-width: 520px;
         margin: 0 auto 30px;
+    }
+    & h3 {
+        @include heading-3;
+        width: 100%;
     }
 
     & form {
@@ -35,10 +41,13 @@
     & input {
         margin-bottom: 20px;
         @include plain-text;
+        max-width: 520px;
+
     }
     & textarea {
         margin-bottom: 20px;
         @include plain-text;
+        max-width: 520px;
     }
 
     & input:nth-of-type(2) {
@@ -53,5 +62,40 @@
         border: none;
         border-radius: 5px;
         box-shadow: 5px 5px 5px -5px $active;
+    }
+}
+
+.contact__igfeed {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.contact__igfeed a {
+    display: block;
+    box-sizing: border-box;
+    width: calc(100%/3);
+    margin-right: 10px;
+    text-decoration: none;
+    @include plain-text;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
+    height: 250px;
+    overflow: hidden;
+
+    @media (min-width: $desktop-width) {
+        font-size: 14px;
+        line-height: 18px;
+        height: auto;
+    }
+
+    &:nth-of-type(4) {
+        margin-right: 0;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
     }
 }
