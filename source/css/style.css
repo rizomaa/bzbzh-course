@@ -40,7 +40,7 @@
   box-shadow: 4px 0px 10px 0px rgba(211, 211, 211, 0.3), -4px 0px 10px 0px rgba(211, 211, 211, 0.3); }
 
 .author {
-  padding: 40px 20px 20px; }
+  padding: 40px 20px 0; }
   .author h2 {
     font-family: "Roboto Medium", "Arial", sans-serif;
     font-weight: 500;
@@ -68,7 +68,8 @@
     @media (min-width: 768px) {
       .author picture {
         width: 40%;
-        height: auto; } }
+        height: auto;
+        margin-bottom: 40px; } }
   @media (min-width: 768px) {
     .author {
       grid-row: 10/11;
@@ -82,9 +83,54 @@
       margin-top: -100px; } }
   .author a {
     margin: 0 auto; }
-    @media (min-width: 768px) {
-      .author a {
-        margin: 40px auto; } }
+
+.author__igfeed {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: auto; }
+
+.author__igfeed a {
+  display: block;
+  box-sizing: border-box;
+  width: calc(100%/3);
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  height: auto;
+  margin-bottom: 100px; }
+  @media (max-width: 550px) {
+    .author__igfeed a {
+      font-size: 14px;
+      line-height: 18px;
+      width: 100%; } }
+  .author__igfeed a:nth-of-type(3) {
+    margin-right: 0; }
+  .author__igfeed a img {
+    width: 100%;
+    height: auto; }
+  .author__igfeed a p {
+    font-family: "Roboto Regular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%; }
+
+@media (max-width: 550px) {
+  .author__igfeed a:nth-child(n+2) {
+    display: none; } }
+
+.author .enrol-button {
+  margin-bottom: 40px;
+  margin-top: 40px; }
 
 .certificate {
   padding: 20px 20px 20px;
@@ -989,11 +1035,11 @@ a.lang-toggle__active {
   fill: #FFFFFF; }
 
 .contact {
-  padding: 40px 20px 20px;
+  padding: 0 20px 20px;
   margin-bottom: 40px; }
   @media (min-width: 768px) {
     .contact {
-      padding: 40px 40px 20px;
+      padding: 0 40px 20px;
       border-top: 100px solid transparent;
       margin-top: -100px;
       background-clip: padding-box;
@@ -1059,36 +1105,3 @@ a.lang-toggle__active {
   border-radius: 5px;
   box-shadow: 5px 5px 5px -5px #212529; }
 
-.contact__igfeed {
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-  margin-bottom: 40px; }
-
-.contact__igfeed a {
-  display: block;
-  box-sizing: border-box;
-  width: calc(100%/3);
-  margin-right: 10px;
-  text-decoration: none;
-  font-family: "Roboto Regular", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  font-size: 12px;
-  line-height: 16px;
-  color: #000000;
-  height: 250px;
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    .contact__igfeed a {
-      font-size: 14px;
-      line-height: 18px;
-      height: auto; } }
-  .contact__igfeed a:nth-of-type(4) {
-    margin-right: 0; }
-  .contact__igfeed a img {
-    width: 100%;
-    height: auto; }
-
-/*# sourceMappingURL=style.css.map */
