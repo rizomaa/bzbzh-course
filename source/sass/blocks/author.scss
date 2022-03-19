@@ -52,6 +52,7 @@
 .author__igfeed {
     width: 100%;
     display: flex;
+    flex-direction: row;
     overflow: hidden;
     height: auto;
 }
@@ -66,7 +67,7 @@
     line-height: 16px;
     color: $black;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     @media (max-width: 550px) {
         font-size: 14px;

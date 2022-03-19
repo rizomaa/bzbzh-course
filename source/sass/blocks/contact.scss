@@ -49,18 +49,27 @@
         @include plain-text;
         max-width: 520px;
     }
+}
 
-    & input:nth-of-type(2) {
-        width: 280px;
-        margin: 0 auto;
-        background-color: $form-button;
-        color: $white;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 5px 5px;
-        box-sizing: border-box;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 5px 5px 5px -5px $active;
-    }
+.form__submit {
+    cursor: pointer;
+    transition-duration: 0.5s;
+    width: 280px;
+    margin: 0 auto;
+    background-color: $form-button;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px -5px $active;
+
+        &:hover {
+            background-color: $hover;
+        }
+        &:active {
+            background-color: $active;
+        }
 }
