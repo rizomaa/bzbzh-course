@@ -2,14 +2,13 @@
     font-family: "Roboto Regular", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
-    color: $black;
+    line-height: 22px;
   }
 @mixin heading-1 {
     font-family: "Roboto Bold", "Arial", sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 26px;
     color: $black;
 }
 @mixin heading-2 {
@@ -31,8 +30,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
-text-transform: uppercase;
-text-align: center;
+    text-transform: uppercase;
+    text-align: center;
     color: $black;
 }
 @mixin menu-desktop {
@@ -43,10 +42,10 @@ text-align: center;
     color: $black;
 }
 @mixin buttons {
-font-family: "Roboto Medium", "Arial", sans-serif;
+    font-family: "Roboto Medium", "Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: $white;
-text-transform: uppercase;
+    text-transform: uppercase;
 }

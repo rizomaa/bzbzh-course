@@ -11,13 +11,25 @@
         @include heading-2;
     }
 
+    & hr {
+        border: none; 
+        color: $dark-grey; 
+        background-color: $dark-grey; 
+        height: 1px;
+
+        @media (min-width: $desktop-width) {
+            color: $transparent-white; 
+            background-color: $transparent-white; 
+        }
+    }
+
     @media (min-width: $desktop-width) {
         background-color: $timetable-color;
         width: 224px;
         height: 285px;
         grid-row: 1/2;
         grid-column: 2/3;
-        margin: 140px 40px 20px;
+        margin: 138px 40px 20px;
         padding-top: 0;
         border-radius: 5px;
     }

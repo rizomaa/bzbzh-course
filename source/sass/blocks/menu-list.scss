@@ -8,7 +8,15 @@
 
     @media (min-width: $desktop-width) {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 850px) {
         justify-content: right;
+    }
+    @media (min-width: $max-desktop-width) {
+        font-size: 15px;
     }
     
     & a {
@@ -18,7 +26,10 @@
         color: $black;
         
         @media (min-width: $desktop-width) {
-            border-radius: 5px;
+            padding: 10px 4px;
+        }  
+        @media (min-width: $max-desktop-width) {
+            padding: 10px 8px;
         }       
     }
 }
@@ -28,6 +39,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    white-space: nowrap;
 
     &:nth-of-type(1) {
         border-top: 1px solid $grey;
@@ -45,9 +57,10 @@
 .menu-list__item a:hover {
     background-color: $button-color;
     color: $white;
+    border-radius: 5px;
 }
 .menu-list__item a.active {
     color: $white;
     background-color: $button-color;
-    
+    border-radius: 5px;
 }
