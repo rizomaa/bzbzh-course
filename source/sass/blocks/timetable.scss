@@ -9,6 +9,7 @@
 
     & h2 {
         @include heading-2;
+        text-align: center;
     }
 
     & hr {

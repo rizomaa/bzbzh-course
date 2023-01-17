@@ -50,6 +50,15 @@
     @media (min-width: 768px) {
       .author h2 {
         width: 100%; } }
+  .author h3 {
+    font-family: "Roboto Regular", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000; }
+    @media (min-width: 768px) {
+      .author h3 {
+        width: 100%; } }
   .author p {
     font-family: "Roboto Regular", "Arial", sans-serif;
     font-weight: 400;
@@ -69,7 +78,7 @@
       .author picture {
         width: 40%;
         height: auto;
-        margin-bottom: 40px; } }
+        margin-bottom: 20px; } }
   @media (min-width: 768px) {
     .author {
       grid-row: 10/11;
@@ -83,6 +92,35 @@
       margin-top: -100px; } }
   .author a {
     margin: 0 auto; }
+
+.author__details {
+  display: block;
+  width: 100%;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  line-height: 28px; }
+  .author__details summary {
+    cursor: pointer;
+    list-style: none; }
+  .author__details summary::after {
+    content: "\25BA";
+    position: relative;
+    top: 1px;
+    left: 5px;
+    color: #F19202; }
+  .author__details ol {
+    font-family: "Roboto Regular", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 15px; }
+    .author__details ol li {
+      padding-bottom: 10px; }
+
+.author__details[open] summary::after {
+  content: "\25BC"; }
 
 .author__igfeed {
   width: 100%;
@@ -192,6 +230,9 @@
     @media (min-width: 768px) {
       .content ol {
         margin: 0; } }
+    .content ol li {
+      line-height: 22px;
+      padding-bottom: 10px; }
   .content img {
     width: 100%;
     height: auto; }
@@ -369,7 +410,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    line-height: 28px; }
+    line-height: 22px;
+    padding-bottom: 10px; }
     @media (min-width: 768px) {
       .features__list li {
         display: block;
@@ -509,6 +551,10 @@
       justify-content: space-between;
       align-items: flex-start;
       padding: 10px 20px; } }
+
+.main-header__container a {
+  margin: 0;
+  padding: 0; }
 
 .main-header__container img {
   width: 50px;
@@ -847,6 +893,9 @@
       .results ol {
         width: 50%;
         margin-top: 0; } }
+    .results ol li {
+      line-height: 22px;
+      padding-bottom: 10px; }
   .results h2 {
     font-family: "Roboto Medium", "Arial", sans-serif;
     font-weight: 500;
@@ -893,7 +942,8 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #000000; }
+    color: #000000;
+    text-align: center; }
   .timetable hr {
     border: none;
     color: #c4c4c4;

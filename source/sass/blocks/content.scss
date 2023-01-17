@@ -25,6 +25,11 @@
         @media (min-width: $desktop-width) {
             margin: 0;
         }
+
+        & li {
+            line-height: 22px;
+            padding-bottom: 10px;
+        }
     }
 
     & img {
