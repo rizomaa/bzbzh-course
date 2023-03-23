@@ -75,6 +75,10 @@
             left: 5px;
             color: $button-color;
         }
+
+        & summary::-webkit-details-marker {
+            display: none;
+        }
         & ol {
             @include plain-text;
             padding-left: 15px;
