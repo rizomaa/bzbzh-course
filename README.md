@@ -1,5 +1,5 @@
-# Installation guide
-1. Download folder "source";
-2. Extract files;
-3. Launch file "index.html";
-4. Need to refresh Instagram access token every 60 days
+# Кіраўніцтва па ўстаноўцы
+1. Спампаваць тэчку «source»;
+2. Выняць файлы;
+3. Запусціць файл "index.html";
+4. Трэба абнаўляць жэтон доступа Instagram кожныя 60 дзён
